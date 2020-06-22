@@ -7,6 +7,6 @@ for number in lines:
     c = int(number)
     for i in range(2, c + 1):
         if(c % i == 0):
-            div = int(c / i)
-            print("{:d} = {:d} * {:d}".format(c, div, i))
+            div = c // i
+            print("{:d}={:d}*{:d}".format(c, div, i))
             break
